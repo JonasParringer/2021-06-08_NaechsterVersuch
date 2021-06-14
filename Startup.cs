@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace _2021_06_08_NaechsterVersuch
 {
@@ -27,7 +28,9 @@ namespace _2021_06_08_NaechsterVersuch
             services.AddControllersWithViews();
 
             services.AddDbContext<DocumentContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DocumentContext")));
+                    options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("DocumentContext")));
+            //services.AddDbContext<uploadFileContext>(options =>
+            //       options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("uploadFileContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
