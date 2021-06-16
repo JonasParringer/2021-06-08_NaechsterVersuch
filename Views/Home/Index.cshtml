@@ -26,56 +26,63 @@
 
 </div>
 
-<div>
-    <p>
-        <a asp-action="Create">Create New or go to hell and die</a>
-    </p>
-    <table class="table">
-        <thead>
-            <tr>
-                <!--
-            <th>
-                <p>test</p>
-            </th>
-            <th>
-                <p>foo</p>
-            </th>
-            <th>
-                <p>bar</p>
-            </th>
-                -->
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Author)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PublishingDate)
-                </th>
+<body>
+    <div>
+        <p>
+            <a asp-action="Create">Create New or go to hell and die</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <!--
+                    <th>
+                        <p>test</p>
+                    </th>
+                    <th>
+                        <p>foo</p>
+                    </th>
+                    <th>
+                        <p>bar</p>
+                    </th>
+                        -->
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PublishingDate)
+                    </th>
 
-            </tr>
-        </thead>
-
-
-        
-    </table>
-</div>
-
-<div>
-    <br />
-    <br />
-    <br />
-    <p>hier ist die viewdata</p>
-    <p>@ViewData.Model</p>
-    <p>@ViewData</p>
-    <p>@ViewData.Values</p>
-    <p>@ViewData.ModelState</p>
-    <p>@ViewData.TemplateInfo</p>
+                </tr>
+            </thead>
 
 
 
-</div>
+        </table>
+    </div>
+
+    <div>
+        <br />
+        <br />
+        <br />
+        <p>hier ist die viewdata</p>
+        <p>@ViewData.Model</p>
+        <p>@ViewData</p>
+        <p>@ViewData.Values</p>
+        <p>@ViewData.ModelState</p>
+        <p>@ViewData.TemplateInfo</p>
+
+
+
+    </div>
+
+    @{
+        <!--Html.RenderPartial("Index");-->
+    }
+
+</body>
 
 <!--
 <div>
