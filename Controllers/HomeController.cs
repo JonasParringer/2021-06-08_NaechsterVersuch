@@ -20,9 +20,7 @@ namespace _2021_06_08_NaechsterVersuch.Controllers
 
         public IActionResult Index()
         {
-            // falsch, aber besser als ohne
-            Microsoft.AspNetCore.Mvc.ViewFeatures.TemplateInfo foo = ViewData.TemplateInfo;
-            return View(foo); 
+            return View(); 
         }
 
         public IActionResult Privacy()
