@@ -12,7 +12,7 @@ public class DocumentContext : DbContext
 
     //loggerFactory = new LoggerFactory().AddConsole()
     // loggerFactory = new LoggerFactory().AddConsole((categoryName, logLevel) => (logLevel == LogLevel.Information) && (categoryName == DbLoggerCategory.Database.Command.Name));
-    LoggerFactory = new LoggerFactory().AddConsole((categoryName, LogLevel) => (LogLevel == LogLevel.Information) && (categoryName == DbLoggerCategory.Database.Command.Name));
+    //LoggerFactory = new LoggerFactory().AddConsole((categoryName, LogLevel) => (LogLevel == LogLevel.Information) && (categoryName == DbLoggerCategory.Database.Command.Name));
 
 
 
