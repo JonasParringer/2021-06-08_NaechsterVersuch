@@ -31,6 +31,8 @@ namespace _2021_06_08_NaechsterVersuch.Controllers
 
         public IActionResult ViewDocument()
         {
+            //ViewBag.Name = "try this mofo!!!";
+
             return View();
         }
 
