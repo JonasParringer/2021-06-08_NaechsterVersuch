@@ -1,4 +1,5 @@
-﻿@model IEnumerable<_2021_06_08_NaechsterVersuch.Models.Document>
+﻿@*@model IEnumerable<_2021_06_08_NaechsterVersuch.Models.Document>*@
+@model Document
 
 @{
     ViewData["Title"] = "Index";
@@ -7,32 +8,37 @@
 
 <partial name="Index">
 
-<h1>Index</h1>
+    <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Length)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Author)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PublishingDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataType)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-  
-</table>
-<partial name="Index" />
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Length)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PublishingDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataType)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+    </table>
+
+    <br />
+    <p>@ViewBag.Name</p>
+    <br />
+
+    @*<partial name="Index" />*@

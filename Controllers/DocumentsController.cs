@@ -29,7 +29,7 @@ namespace _2021_06_08_NaechsterVersuch.Controllers
         */
         public IActionResult Index()
         {
-            ViewBag.Name = "try this mofo!!!";
+            ViewBag.Name = "Greatings from the  DocumentsController ;)";
             return View();
         }
 
