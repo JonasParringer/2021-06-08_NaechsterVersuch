@@ -1,3 +1,4 @@
+using _2021_06_08_NaechsterVersuch.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -22,5 +23,13 @@ namespace _2021_06_08_NaechsterVersuch
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        Document document = new Document()
+        {
+            ID = 42,
+            Name = "Sepp",
+            Length = 43,
+            Author = "Franz"
+        };
     }
 }

@@ -1,5 +1,5 @@
-﻿@*@model IEnumerable<_2021_06_08_NaechsterVersuch.Models.Document>*@
-@model Document
+﻿@model IEnumerable<_2021_06_08_NaechsterVersuch.Models.Document>
+@*@model Document*@
 @*@model IEnumerable<Document>*@
 @*Die funktionieren alle*@
 
@@ -30,65 +30,119 @@
 </div>
 
 <body>
-    <div>
-        <p>
-            <a asp-action="Create">Create New or go to hell and die</a>
-        </p>
-        <table class="table">
-            <thead>
-                <tr>
-                    <!--
-                    <th>
-                        <p>test</p>
-                    </th>
-                    <th>
-                        <p>foo</p>
-                    </th>
-                    <th>
-                        <p>bar</p>
-                    </th>
-                        -->
-                    <th>
-                        @Html.DisplayNameFor(model => model.Name)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Author)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.PublishingDate)
-                    </th>
+    @*
+        <div>
+            <p>
+                <a asp-action="Create">Create New or go to hell and die</a>
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
 
-                </tr>
-            </thead>
+                        <th>
+                            <p>test</p>
+                        </th>
+                        <th>
+                            <p>foo</p>
+                        </th>
+                        <th>
+                            <p>bar</p>
+                        </th>
 
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Author)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PublishingDate)
+                        </th>
 
-
-        </table>
-    </div>
-
-    <div>
-        <br />
-        <br />
-        <br />
-        <p>hier ist die viewdata</p>
-        <p>@ViewData.Model</p>
-        <p>@ViewData</p>
-        <p>@ViewData.Values</p>
-        <p>@ViewData.ModelState</p>
-        <p>@ViewData.TemplateInfo</p>
+                    </tr>
+                </thead>
 
 
 
-    </div>
+            </table>
+        </div>
+    *@
+
+    @*<div>
+            <br />
+            <br />
+            <br />
+            <p>hier ist die viewdata</p>
+            <p>@ViewData.Model</p>
+            <p>@ViewData</p>
+            <p>@ViewData.Values</p>
+            <p>@ViewData.ModelState</p>
+            <p>@ViewData.TemplateInfo</p>
+        </div>*@
     <br />
-    <p>here ViewBag.Name SHOULD be displayed</p>
+    @*<p>here ViewBag.Name SHOULD be displayed</p>*@
     @*<p>@ViewBag.Name</p>*@
 
     <a class="" asp-area="" asp-controller="Documents" asp-action="Index">Documents</a>
 
+    <br />
 
-    
-    
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        @*<thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Length)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Author)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PublishingDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataType)
+                </th>
+                <th></th>
+            </tr>
+        </thead>*@
+        @*<tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(model => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.Author)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.PublishingDate)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>*@
+    </table>
+
+    <br />
+    <p>@ViewBag.Name</p>
+    <br />
+
+    @*<script type="text/javascript" src="~/Content/Scripts/@(Path.GetFileNameWithoutExtension(Server.MapPath(((RazorView)ViewContext.View).ViewPath))).js"></script>*@
+    @*<script type="text/cshtml" src="C:\Users\ITA8-TN04\OneDrive - IT-Akademie Dr. Heuer GmbH\git\JonasParringer\2021-06-08_NaechsterVersuch\Views\Documents\Index.cshtml"></script>*@
+
 
 </body>
 
