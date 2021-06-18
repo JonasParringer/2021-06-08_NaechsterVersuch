@@ -20,7 +20,8 @@ namespace _2021_06_08_NaechsterVersuch.Controllers
 
         public IActionResult Index()
         {
-            return View(); 
+            ViewBag.Name = "try this mofo!!!";
+            return View();
         }
 
         public IActionResult Privacy()
