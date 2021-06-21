@@ -94,25 +94,25 @@
     </p>
     <table class="table">
         @*<thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Length)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Author)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PublishingDate)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.DataType)
-                </th>
-                <th></th>
-            </tr>
-        </thead>*@
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Length)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PublishingDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DataType)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>*@
         @*<tbody>
                 @foreach (var item in Model)
                 {
@@ -142,6 +142,13 @@
 
     @*<script type="text/javascript" src="~/Content/Scripts/@(Path.GetFileNameWithoutExtension(Server.MapPath(((RazorView)ViewContext.View).ViewPath))).js"></script>*@
     @*<script type="text/cshtml" src="C:\Users\ITA8-TN04\OneDrive - IT-Akademie Dr. Heuer GmbH\git\JonasParringer\2021-06-08_NaechsterVersuch\Views\Documents\Index.cshtml"></script>*@
+
+    <br />
+    <br />
+    <br />
+
+    <p>Hier sollte die partial View stehen</p>
+    <partial name="_PartialViewDocument" />
 
 
 </body>
